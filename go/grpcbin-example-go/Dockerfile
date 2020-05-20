@@ -1,5 +1,5 @@
 # build
-FROM            golang:1.9-alpine as builder
+FROM golang:1.14-alpine as builder
 RUN             apk update && apk add git
 COPY            . /go/src/github.com/moul/grpcbin-example/go
 WORKDIR         /go/src/github.com/moul/grpcbin-example/go
